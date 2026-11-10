@@ -100,6 +100,7 @@ Settings_menu("init")
 
 SetTimer, Loop, 1000
 SetTimer, Loop_main, 50
+SetTimer, PythonBridge_Poll, 500
 
 vars.system.timeout := 0
 LLK_Log("waiting for focus on client-window...")
@@ -147,6 +148,7 @@ Return
 #Include modules\map-info.ahk
 #Include modules\map tracker.ahk
 #Include modules\omni-key.ahk
+#Include modules\python-bridge.ahk
 #Include modules\qol tools.ahk
 #Include modules\recombination.ahk
 #Include modules\rune-ninja.ahk
